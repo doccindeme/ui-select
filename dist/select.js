@@ -733,10 +733,10 @@ uis.controller('uiSelectCtrl',
         }
         _resetSearchInput();
         $scope.$broadcast('uis:select', item);
-
+        ctrl.focusSearchInput();
         if (ctrl.closeOnSelect) {
           ctrl.close(skipFocusser);
-        }
+        } 
       }
     }
   };
